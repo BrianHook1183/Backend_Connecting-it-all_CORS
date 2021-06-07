@@ -2,6 +2,8 @@ const router = require("express").Router();
 const controller = require("./plants.controller");
 const methodNotAllowed = require("../errors/methodNotAllowed");
 
+//TODO make the necessary changes to enable CORS for the entire router.
+
 router
   .route("/:plantId")
   .get(controller.read)
